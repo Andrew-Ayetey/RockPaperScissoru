@@ -18,23 +18,53 @@
         {
         return "Scissors";
     }
-    function rpsRound(playerSelection, computerSelection)
-        {
+};
+    function rpsRound(playerSelection, computerSelection){
             // find who picks rock//
             ///Rock beats Scissors, Scissors beats Paper, Paper beats Rock, doubles tie///
             
         
-        if (playerSelection.toUpperCase() == computerSelection.toUpperCase()){return "It's a tie!";
+        if (playerSelection.toUpperCase() == computerSelection.toUpperCase()){
+            return "It's a tie!";
         }
-    else if (playerSelection.toUpperCase() == "ROCK")
+        else if (playerSelection.toUpperCase() == "ROCK")
         {
             if (computerSelection.toUpperCase() == "PAPER")
                 {
-                    return "You Lose!"
+                    return "Paper Beats Rock! You Lose!";
                 }
+            else
+            {
+                return "Rock Beats Scissors. You Win!";
+            }
 
         }
-    }
+        else if (playerSelection.toUpperCase() == "PAPER")
+        {
+            if (computerSelection.toUpperCase() == "SCISSORS")
+                {
+                    return "Scissors Beats Paper! You Lose!";
+                }
+            else
+            {
+                return "Paper Beats Rock. You Win!";
+            }
+
+        }
+        else if (playerSelection.toUpperCase() == "SCISSORS")
+        {
+            if (computerSelection.toUpperCase() == "ROCK")
+                {
+                    return "Rock Beats Scissors! You Lose!";
+                }
+            else
+            {
+                return "Scissors Beats Paper. You Win!";
+            }
+
+        };
+    // function game(){
+    // };
     }
 </script>
 </html>
