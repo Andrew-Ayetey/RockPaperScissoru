@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <script>
+    var playerScore = 0
+    var computerScore = 0
     function computerPlay(){
     n = Math.random()
     console.log(n);
@@ -30,8 +32,10 @@
         else if (playerSelection.toUpperCase() == "ROCK")
         {
             if (computerSelection.toUpperCase() == "PAPER")
-                {
-                    return "Paper Beats Rock! You Lose!";
+                {  
+                    computerScore += 1
+                    console.log(computerScore)
+                    return ("Paper Beats Rock! You Lose!");
                 }
             else
             {
