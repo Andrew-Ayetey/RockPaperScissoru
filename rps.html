@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
 <script>
-    var playerScore = 0
-    var computerScore = 0
+    playerScore = Boolean
+    computerScore = Boolean
     function computerPlay(){
     n = Math.random()
-    console.log(n);
+    
     if (n <= .33)
         {
         
@@ -33,8 +33,8 @@
         {
             if (computerSelection.toUpperCase() == "PAPER")
                 {  
-                    computerScore += 1
-                    console.log(computerScore)
+                    
+                    
                     return ("Paper Beats Rock! You Lose!");
                 }
             else
@@ -67,8 +67,15 @@
             }
 
         };
-    // function game(){
-    // };
     }
+    function game(){
+        let playCount = 5
+        while (playCount > 0){console.log(
+            rpsRound(prompt("What do you choose?", ''), computerPlay()))
+            playCount -= 1
+        }
+
+    };
+    
 </script>
 </html>
