@@ -6,6 +6,8 @@
     point = "None"
     function computerPlay(){
     n = Math.random()
+    // For debugging!
+    // n = .33
     
     
     
@@ -97,7 +99,7 @@
                 point == "NONE"
             }
             
-        console.log(playerChoice, computerChoice, point, playerScore, computerScore)
+        console.log(playerChoice, computerChoice, point, rpsRound(playerChoice,computerChoice), playerScore, computerScore)
         };
     if (playerScore > computerScore){
         return "Congratulations, you win!"
@@ -106,7 +108,7 @@
         return "Apologies, but you lose. All hail the robot overlords!"
     }
     else {
-        "ITS A TIE! AMAZING!"
+        return "ITS A TIE! AMAZING!"
     }
     
 
