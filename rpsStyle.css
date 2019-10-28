@@ -1,0 +1,71 @@
+/* Rock Paper Scissors Sytle */
+
+html body{ margin: 0;
+
+}
+
+.buttons{
+display: grid;
+border: 2px black;
+height: 250px;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: auto;
+justify-items: center;
+align-content: center;
+
+}
+
+.score{
+    display: flex;
+    border: 2px black;
+    height: 100px;
+    flex-flow: row wrap;
+    width: 30%;
+    align-content: center;
+    justify-content: center;
+    padding-left: 30%;
+    padding-right: 30%;
+    margin-left: 10%;
+    margin-right: 10%;
+
+
+}
+
+#ROCK{
+width: 50%;
+height: 50%;
+}
+
+#PAPER{
+width: 50%;
+height: 50%;
+}
+
+
+#SCISSORS{
+width: 50%;
+height: 50%;
+
+}
+
+#PlayerScoreDiv{
+    width: 30%;
+    height: 50%;
+    text-align: center;
+    align-content: center;
+    border: solid black;
+
+}
+
+#ComputerScoreDiv{
+    width: 30%;
+    height: 50%;
+    align-content: center;
+    text-align: center;
+    border: solid black;
+}
+
+#WinnerBox{
+    width: 100%;
+    height: 150px;
+}
